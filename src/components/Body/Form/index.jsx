@@ -1,22 +1,20 @@
 import { useEffect, useState } from "react";
-import styled from "styled-components";
 import { Container, H2 } from "./Container";
 import { Name } from "./Container";
 import { MyButton } from "./Container";
 import { Message } from "./Container";
-import axios from "axios";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const local = "http://localhost:8080/feedbacks";
+  const URL = "https://lit-forest-96253.herokuapp.com/feedbacks";
 
   const submitForm = () => {
-    const URL = "https://lit-forest-96253.herokuapp.com/feedbacks";
     const data = { firstName: name, email: email, message: message };
 
-
-    fetch("http://localhost:8080/feedbacks", {
+    fetch(URL, {
       method: "POST",
       body: JSON.stringify(data),
     })
@@ -25,7 +23,7 @@ const Form = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8080/feedbacks")
+    fetch(URL)
       .then((data) => data.json())
       .then((res) => {
         console.log(res);
