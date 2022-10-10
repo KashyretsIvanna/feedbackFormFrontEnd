@@ -1,0 +1,15 @@
+.mouth {
+  /* right: 30.79%;
+  top: 26.51%; */
+  background-image: url(../../img/mouth.png);
+  /* width: 40.26px;
+  height: 25.97px;
+  position: absolute;
+  background-size: contain;
+  transform: rotateZ(40deg);
+  background-repeat: no-repeat; */
+}
+
+.eye {
+  background-image: url(../../img/eye.png);
+}
