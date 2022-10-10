@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/feedbackFormFrontEnd/static/css/main.df80ace1.css",
-    "main.js": "/feedbackFormFrontEnd/static/js/main.757b3a08.js",
+    "main.js": "/feedbackFormFrontEnd/static/js/main.3370eae3.js",
     "static/media/elipse.png": "/feedbackFormFrontEnd/static/media/elipse.7589fa82419773e44e0f.png",
     "index.html": "/feedbackFormFrontEnd/index.html",
     "main.df80ace1.css.map": "/feedbackFormFrontEnd/static/css/main.df80ace1.css.map",
-    "main.757b3a08.js.map": "/feedbackFormFrontEnd/static/js/main.757b3a08.js.map"
+    "main.3370eae3.js.map": "/feedbackFormFrontEnd/static/js/main.3370eae3.js.map"
   },
   "entrypoints": [
     "static/css/main.df80ace1.css",
-    "static/js/main.757b3a08.js"
+    "static/js/main.3370eae3.js"
   ]
 }
