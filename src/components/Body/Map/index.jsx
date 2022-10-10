@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import styles from "./index.module.css";
 import PinkCircle from "../../Circle";
 import Circle from "../../StyledFace";

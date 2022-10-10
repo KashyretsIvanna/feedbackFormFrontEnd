@@ -3,6 +3,15 @@ import { Container, H2 } from "./Container";
 import { Name } from "./Container";
 import { MyButton } from "./Container";
 import { Message } from "./Container";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+export const L = styled(Link)`
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: pink;
+  font-size: 20px;
+`;
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -17,29 +26,21 @@ const Form = () => {
     fetch(URL, {
       method: "POST",
       body: JSON.stringify(data),
-      headers:{
-        "Accept":"*/*",
-        "Content-Type":"application/json",
-        "Accept-Encoding":"gzip, deflate, br",
-        "Connection":"keep-alive"
-
-      }
+      headers: {
+        Accept: "*/*",
+        "Content-Type": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        Connection: "keep-alive",
+      },
     })
       .then((response) => response.json())
       .then((json) => console.log(json));
   };
 
-  useEffect(() => {
-    fetch(URL)
-      .then((data) => data.json())
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
   return (
     <>
+      <L to="/comments">Comments</L>
+
       <Container>
         <H2>Reach out to us</H2>
         <Name
