@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/feedbackFormFrontEnd/static/css/main.df80ace1.css",
+    "main.js": "/feedbackFormFrontEnd/static/js/main.e94054b8.js",
+    "static/media/elipse.png": "/feedbackFormFrontEnd/static/media/elipse.7589fa82419773e44e0f.png",
+    "index.html": "/feedbackFormFrontEnd/index.html",
+    "main.df80ace1.css.map": "/feedbackFormFrontEnd/static/css/main.df80ace1.css.map",
+    "main.e94054b8.js.map": "/feedbackFormFrontEnd/static/js/main.e94054b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df80ace1.css",
+    "static/js/main.e94054b8.js"
+  ]
+}
