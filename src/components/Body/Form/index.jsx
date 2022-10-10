@@ -28,9 +28,6 @@ const Form = () => {
       body: JSON.stringify(data),
       headers: {
         Accept: "*/*",
-        "Content-Type": "application/json",
-        "Accept-Encoding": "gzip, deflate, br",
-        Connection: "keep-alive",
       },
     })
       .then((response) => response.json())

@@ -72,7 +72,7 @@ const Body = () => {
         top={"30.08%"}
         left={"55.79%"}
       />
-       <Cloud
+      <Cloud
         opacity={"0.5"}
         width={"12vw"}
         height={"9vw"}
