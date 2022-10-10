@@ -26,13 +26,21 @@ const Form = () => {
 
     fetch(URL, {
       method: "POST",
-      body: data,
+      body: JSON.stringify(data),
       headers: {
         Accept: "*/*",
       },
     })
       .then((response) => response.json())
-      .then((json) => console.log(json));
+      .then((json) => {
+        console.log(json);
+        alert("Your feedback was added succesfully!");
+      })
+      .catch((err) => alert(err));
+
+    setEmail("");
+    setName("");
+    setMessage("");
   };
 
   return (
