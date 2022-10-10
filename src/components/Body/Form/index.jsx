@@ -17,6 +17,13 @@ const Form = () => {
     fetch(URL, {
       method: "POST",
       body: JSON.stringify(data),
+      headers:{
+        "Accept":"*/*",
+        "Content-Type":"application/json",
+        "Accept-Encoding":"gzip, deflate, br",
+        "Connection":"keep-alive"
+
+      }
     })
       .then((response) => response.json())
       .then((json) => console.log(json));
