@@ -3,6 +3,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { nanoid } from "nanoid";
 import { L } from "../Form";
+import { setFeedbacks } from "../../../redux/slice";
+import { useDispatch, useSelector } from "react-redux";
+
 const Container = styled.div`
   width: 90vw;
   max-width: 1000px;
@@ -27,6 +30,7 @@ const Item = styled.div`
 `;
 
 const Comments = () => {
+  const dispatch = useDispatch();
   const [comments, setComments] = useState([]);
   const URL = "https://lit-forest-96253.herokuapp.com/feedbacks";
 
@@ -35,6 +39,7 @@ const Comments = () => {
       .then((data) => data.json())
       .then((res) => {
         setComments(res);
+        dispatch(setFeedbacks(res));
         console.log(res);
       })
       .catch((err) => console.log(err));

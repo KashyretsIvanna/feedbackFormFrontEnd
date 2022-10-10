@@ -5,6 +5,7 @@ import { MyButton } from "./Container";
 import { Message } from "./Container";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import axios from "axios";
 export const L = styled(Link)`
   position: absolute;
   top: 30px;
@@ -25,7 +26,7 @@ const Form = () => {
 
     fetch(URL, {
       method: "POST",
-      body: JSON.stringify(data),
+      body: data,
       headers: {
         Accept: "*/*",
       },
